@@ -8,12 +8,15 @@ import Img3 from "../../assets/places/water.jpg";
 import Img4 from "../../assets/places/place4.jpg";
 import Img5 from "../../assets/places/place5.jpg";
 import Img6 from "../../assets/places/place6.jpg";
+import Img9 from "../../assets/places/place9.jpg";
 
 const Places = () => {
   const [orderPopup, setOrderPopup] = React.useState(false);
   const [popupPosition, setPopupPosition] = React.useState({ x: 0, y: 0 });
+  const [selectedTitle, setSelectedTitle] = React.useState(""); // State to hold selected title
 
   const handleOrderPopup = (e, title) => {
+    setSelectedTitle(title); // Set selectedTitle when triggering order popup
     setPopupPosition({ x: e.clientX, y: e.clientY });
     setOrderPopup(true);
   };
@@ -33,81 +36,90 @@ const Places = () => {
             handleOrderPopup={handleOrderPopup}
             img={Img1}
             title="Backwaters of Kerala"
+            alt="Explorers Company"
             location="Kerala, India"
             description="Explore the serene backwaters and lush greenery of Kerala on a traditional boat ride."
-            price={2700}
+            price="3-5"
             type="Nature and Culture"
           />
           <PlaceCard
             handleOrderPopup={handleOrderPopup}
             img={Img2}
             title="Taj Mahal"
+            alt="Explorers Company"
             location="Agra, India"
             description="Visit the iconic Taj Mahal, an ivory-white marble mausoleum on the south bank of the Yamuna river."
-            price={2500}
+            price="2-4"
             type="Cultural Heritage"
           />
           <PlaceCard
             handleOrderPopup={handleOrderPopup}
             img={Img3}
-            title="Andaman Beaches"
-            location="Andaman and Nicobar Islands, India"
-            description="Discover the pristine beaches and vibrant marine life of the Andaman Islands."
-            price={3200}
+            title="Meghalaya"
+            alt="Explorers Company"
+            location="Meghalaya, India"
+            description="Meghalaya offers a blend of natural beauty and cultural richness, making it a perfect destination for nature lovers and adventure seekers."
+            price="4-7"
             type="Beach Adventure"
           />
           <PlaceCard
             handleOrderPopup={handleOrderPopup}
             img={Img4}
-            title="Goa Nightlife"
-            location="Goa, India"
-            description="Experience the sun-kissed beaches and vibrant nightlife of Goa."
-            price={3500}
+            title="Gokarna Dandeli"
+            alt="Explorers Company"
+            location="Gokarna Dandeli, India"
+            description="Gokarna is a small temple town on the western coast of India, located in the state of Karnataka. It is known for its serene beaches."
+            price="2-5"
             type="Beach Party"
           />
           <PlaceCard
             handleOrderPopup={handleOrderPopup}
             img={Img5}
-            title="Ladakh Landscapes"
-            location="Ladakh, India"
-            description="Embark on an adventure to Ladakh and experience its breathtaking landscapes and rich culture."
-            price={4000}
+            title="Coorg Chikmagalur"
+            alt="Explorers Company"
+            location="Coorg Chikmagalur, India"
+            description="Coorg is a picturesque district in the southwestern part of Karnataka, India. Renowned for its lush coffee plantations, misty hills."
+            price="3-6"
             type="Mountain Adventure"
           />
           <PlaceCard
             handleOrderPopup={handleOrderPopup}
             img={Img6}
             title="Ooty"
+            alt="Explorers Company"
             location="Ooty, India"
             description="Explore the royal palaces and vibrant history of Ooty, the cold City."
-            price={3200}
+            price="2-4"
             type="Cultural Heritage"
           />
           <PlaceCard
             handleOrderPopup={handleOrderPopup}
             img="https://res.cloudinary.com/djlhr4ycg/image/upload/v1718637286/OIP_2_ahhlj2.jpg"
             title="Mysore Palace"
+            alt="Explorers Company"
             location="Mysore, Karnataka"
             description="Visit the grand Mysore Palace, a historical royal residence known for its architecture and cultural significance."
-            price={3100}
+            price="3-5"
             type="Royal Heritage"
           />
           <PlaceCard
             handleOrderPopup={handleOrderPopup}
             img="https://res.cloudinary.com/djlhr4ycg/image/upload/v1718637287/1560622581_1560622568625_ka7joa.jpg"
             title="Kashmir"
+            alt="Explorers Company"
             location="Kashmir, Himachal Pradesh"
-            description="Enjoy the scenic beauty and colonial charm of kashmir amidst the Himalayan foothills."
-            price={3000}
+            description="Enjoy the scenic beauty and colonial charm of Kashmir amidst the Himalayan foothills."
+            price="4-7"
             type="Hill Station Retreat"
           />
           <PlaceCard
             handleOrderPopup={handleOrderPopup}
-            img="https://res.cloudinary.com/djlhr4ycg/image/upload/v1718637288/R_d42kkr.jpg"
-            title="Hampi Temples"
-            location="Hampi, Karnataka"
-            description="Explore the ancient ruins and majestic temples of Hampi, Karnataka."
-            price={2800}
+            img={Img9}
+            title="Kedarnath Temples"
+            alt="Explorers Company"
+            location="Kedarnath, Uttarakhand"
+            description="It is one of the four major sites in India's Chota Char Dham pilgrimage and is renowned for the Kedarnath Temple, dedicated to Lord Shiva."
+            price="3-6"
             type="Historical and Cultural"
           />
         </div>
@@ -116,6 +128,7 @@ const Places = () => {
         <OrderPopup
           orderPopup={orderPopup}
           setOrderPopup={handleClosePopup}
+          selectedTitle={selectedTitle} // Pass selectedTitle to OrderPopup
           position={{ top: popupPosition.y, left: popupPosition.x }}
         />
       )}

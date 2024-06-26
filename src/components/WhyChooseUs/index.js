@@ -14,24 +14,28 @@ export default function WhyChooseUs() {
       title: "Get Best Prices",
       subTitle:
         "Pay through our application and save thousands and get amazing rewards.",
+      alt:"Explorers Company",
     },
     {
       icon: serviceImages[1],
       title: "Covid Safe",
       subTitle:
         "We have all the curated hotels that have all the precaution for a covid safe environment.",
+      alt:"Explorers Company",
     },
     {
       icon: serviceImages[2],
       title: "Flexible Payment",
       subTitle:
         " Enjoy the flexible payment through our app and get rewards on every payment.",
+      alt:"Explorers Company",
     },
     {
       icon: serviceImages[3],
       title: "Find The Best Near You",
       subTitle:
         "Find the best hotels and places to visit near you in a single click.",
+      alt:"Explorers Company",
     },
   ];
 
@@ -43,7 +47,7 @@ export default function WhyChooseUs() {
           {data.map((service, index) => (
             <div className="service" key={index}>
               <div className="icon-container">
-                <img src={service.icon} alt="" className="service-icon" />
+                <img src={service.icon} alt="Explorers Company" className="service-icon" />
               </div>
               <h3>{service.title}</h3>
               <p>{service.subTitle}</p>

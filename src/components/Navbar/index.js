@@ -31,8 +31,8 @@ export default function Navbar() {
       <nav className={`nav ${scroll ? "scroll" : ""}`}>
         <div className="brand">
           <div className="container">
-            <span className="brand-text">69</span>
-            <span className="brand-text colorful-text">TRIPS</span>
+            <span className="brand-text">Explorers</span>
+            <span className="brand-text colorful-text">Company</span>
           </div>
           <div className="toggle">
             {navbarState ? (

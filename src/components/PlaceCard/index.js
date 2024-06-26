@@ -19,7 +19,7 @@ const PlaceCard = ({
         <div className="overflow-hidden">
           <img
             src={img}
-            alt="okay"
+            alt="Explorers Company"
             className="mx-auto h-[220px] w-full object-cover transition duration-700 hover:skew-x-2 hover:scale-110"
           />
         </div>

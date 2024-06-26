@@ -13,42 +13,42 @@ const ExploreAll = () => {
         <div className="image-section" data-aos="flip-up">
           <img
             src={TravelImg}
-            alt="Travel"
+            alt="Explorers Company"
             className="travel-image animated-image"
           />
         </div>
         {/* Text content section */}
         <div className="text-section">
           <h1 className="title" data-aos="fade-up">
-            Discover the World with 69 Trips
+            Discover the World with Explorers Company
           </h1>
           <p className="description" data-aos="fade-up">
-            At 69 Trips, we specialize in creating unforgettable travel
+            At Explorers Company Private Limited, we specialize in creating unforgettable travel
             experiences. From exotic destinations to luxury accommodations,
             we've got you covered.
           </p>
           <div className="icon-grid" data-aos="zoom-in">
             <div className="icon-item">
               <div className="icon-wrapper violet-bg">
-                <MdFlight className="icon violet-text" />
+                <MdFlight className="icon violet-text" alt="Explorers Company" />
               </div>
               <p className="icon-text">Flights</p>
             </div>
             <div className="icon-item">
               <div className="icon-wrapper green-bg">
-                <IoIosWifi className="icon green-text" />
+                <IoIosWifi className="icon green-text" alt="Explorers Company" />
               </div>
               <p className="icon-text">Wi-Fi</p>
             </div>
             <div className="icon-item">
               <div className="icon-wrapper orange-bg">
-                <MdOutlineLocalHotel className="icon orange-text" />
+                <MdOutlineLocalHotel className="icon orange-text" alt="Explorers Company" />
               </div>
               <p className="icon-text">Hotels</p>
             </div>
             <div className="icon-item">
               <div className="icon-wrapper yellow-bg">
-                <IoFastFoodSharp className="icon yellow-text" />
+                <IoFastFoodSharp className="icon yellow-text" alt="Explorers Company" />
               </div>
               <p className="icon-text">Food & Dining</p>
             </div>

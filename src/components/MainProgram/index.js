@@ -9,12 +9,12 @@ const MainProgram = () => {
   return (
     <section id="program" className="main-program-section">
       <div className="container1">
-        <h2 className="sub-title">Main Program</h2>
+        <h2 className="sub-title">Explorers Main Program</h2>
         <div className="program-container">
           <div className="program">
             <img
               src={lectureIcon}
-              alt="lecture-icon"
+              alt="Explorers Company"
               className="program-image"
             />
             <h4 className="program-title">Lecture</h4>
@@ -24,7 +24,7 @@ const MainProgram = () => {
             </p>
           </div>
           <div className="program">
-            <img src={forumIcon} alt="forum-icon" className="program-image" />
+            <img src={forumIcon} alt="Explorers Company" className="program-image" />
             <h4 className="program-title">Meet Nature</h4>
             <p className="program-description">
               Come explore the Pacific Coast of California with us, or join one
@@ -34,7 +34,7 @@ const MainProgram = () => {
           <div className="program">
             <img
               src={workshopIcon}
-              alt="workshop-icon"
+              alt="Explorers Company"
               className="program-image"
             />
             <h4 className="program-title">Find your Way</h4>
@@ -44,7 +44,7 @@ const MainProgram = () => {
             </p>
           </div>
           <div className="program">
-            <img src={igniteIcon} alt="ignite-icon" className="program-image" />
+            <img src={igniteIcon} alt="Explorers Company" className="program-image" />
             <h4 className="program-title">Explore the World</h4>
             <p className="program-description">
               From big wows to hidden gems, our tours leave you feeling that

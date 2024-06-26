@@ -21,7 +21,7 @@ const VideoTour = () => {
 
   return (
     <div className="video-tour">
-      <h1 className="video-tour-head">VIDEO TOUR</h1>
+      <h1 className="video-tour-head">VIDEO TOUR WITH EXPLORERS</h1>
       <div className="video-tour-container">
         {videos.map((video, index) => (
           <div key={index} className={`video-wrapper ${playingIndex === index ? 'show' : 'show'}`}>

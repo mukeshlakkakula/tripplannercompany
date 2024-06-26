@@ -23,23 +23,25 @@ function ContactPopup({ closePopup }) {
         <div className="ContactList">
           <a
             className="ContactItem"
-            href="#"
+            href="https://wa.me/+919032302468"
             onClick={openWhatsappChat}
+            alt="Explorers Company"
           >
             <FaWhatsapp /> WhatsApp
           </a>
           <a
             className="ContactItem"
-            href="https://instagram.com/your-profile"
+            href="https://www.instagram.com/explorers_company/"
             target="_blank"
             rel="noopener noreferrer"
+            alt="Explorers Company"
           >
             <FaInstagram /> Instagram
           </a>
-          <a className="ContactItem" href="tel:+919032302468">
+          <a className="ContactItem" href="tel:+918645663580" alt="Explorers Company">
             <FaPhoneAlt /> Call Now
           </a>
-          <a className="ContactItem" href="mailto:sales@explorerscompany.in">
+          <a className="ContactItem" href="tel:+918645663580" alt="Explorers Company">
             <FaEnvelope /> Request Callback
           </a>
         </div>
