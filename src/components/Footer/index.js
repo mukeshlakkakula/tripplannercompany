@@ -89,14 +89,14 @@ const Footer = () => {
           </div>
           <div className="company">
             <h2 className="mainheading-text">Company</h2>
-            <a href="/about">About Us</a>
-            <a href="/features">Features</a>
-            <a href="/careers">Careers</a>
+            <a href="https://www.instagram.com/explorers_company/">About Us</a>
+            <a href="https://linktr.ee/explorers_company?fbclid=PAZXh0bgNhZW0CMTEAAaYTPsRrLLYP0mcCa23pQF4GOMkn0MAi8q0_jo6pbLEzQFV5mgbASKPZlgk_aem_mIXomxfEUojYN19uZ9kdxA">Features</a>
+            <a href="mailto:hr@explorerscompany.in">Careers</a>
           </div>
           <div className="resource">
             <h2 className="mainheading-text">Resources</h2>
-            <a href="/press">Press Info</a>
-            <a href="/customers">Customers</a>
+            <a href="https://www.timebulletin.com/journey-beyond-boundaries-redefining-travel-experiences-by-achyuthanand-reddy-ceo-explorers-company/">Press Info</a>
+            <a href="https://www.instagram.com/explorers_company/">Customers</a>
             <a href="https://g.page/r/CbtnbhBnx1cREAI/review">Reviews</a>
           </div>
         </div>

@@ -70,12 +70,7 @@ const WhatsappIconOuter = styled.div`
     right: 15px;
   }
 `;
-
-
-
-
-
-const WhatsappIconOuter2 = styled.div`
+const PaymetIconOuter = styled.div`
   position: fixed;
   bottom: 110px;
   right: 20px;
@@ -109,23 +104,13 @@ const WhatsappIconOuter2 = styled.div`
   }
 `;
 
-
-
-
-
-
-
-
-
-
-
 // Styled component for inner Whatsapp icon
 const WhatsappIconInner = styled(FaWhatsapp)`
   font-size: 40px; /* Adjust the font size */
   color: white;
 `;
 
-const WhatsappIconInner2 = styled(SiAmazonpay)`
+const PaymentIconInner = styled(SiAmazonpay)`
   font-size: 40px; /* Adjust the font size */
   color: white;
 `;
@@ -188,16 +173,13 @@ const Home = () => {
         <WhatsappIconInner />
       </WhatsappIconOuter>
 
-
-
-
      <a href="https://razorpay.me/@explorerscompany" target="_blank" rel="noopener noreferrer">
-      <WhatsappIconOuter2
+      <PaymetIconOuter
         isContactPopupOpen={isContactPopupOpen}
         style={{ animationPlayState: isIconBouncing ? "running" : "paused" }}
       >
-        <WhatsappIconInner2 />
-      </WhatsappIconOuter2>
+        <PaymentIconInner />
+      </PaymetIconOuter>
       </a>
      
       {isContactPopupOpen && <ContactPopup closePopup={handleCloseContactPopup} />}

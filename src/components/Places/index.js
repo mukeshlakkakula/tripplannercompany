@@ -3,7 +3,7 @@ import './index.css';
 import PlaceCard from "./PlaceCard";
 import OrderPopup from "../OrderPopup"; // Adjust the path accordingly
 import Img1 from "../../assets/places/boat.jpg";
-import Img2 from "../../assets/places/img_a2a20f11fefe9b7fd387175891b06a61_1529788961366_processed_original.jpg";
+import Img2 from "../../assets/places/HariharFort.jpg";
 import Img3 from "../../assets/places/water.jpg";
 import Img4 from "../../assets/places/place4.jpg";
 import Img5 from "../../assets/places/place5.jpg";
