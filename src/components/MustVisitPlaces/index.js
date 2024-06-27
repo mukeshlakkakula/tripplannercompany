@@ -4,47 +4,47 @@ import './index.css'; // Import the CSS file
 const datas = [
   {
     image:
-      'https://www.incredibleindia.org/content/dam/incredibleindia/images/places/thrissur/thrissur-athirapally-falls-20.jpg/jcr:content/renditions/cq5dam.web.256.256.jpeg',
+      'https://as1.ftcdn.net/v2/jpg/05/64/41/14/1000_F_564411470_6ObwpdJJASXFYOqgkCGCjesVMZjtVjgw.jpg',
     alt:"Explorers Company",
   },
   {
     image:
-      'https://www.incredibleindia.org/content/dam/incredibleindia/images/places/goa/goa-vagator-beach-1.jpg/jcr:content/renditions/cq5dam.web.256.256.jpeg',
+      'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     alt:"Explorers Company",
   },
   {
     image:
-      'https://www.incredibleindia.org/content/dam/incredibleindia/images/places/gokarna/gokarna-maravanthe-beach-0.jpg/jcr:content/renditions/cq5dam.web.256.256.jpeg',
+      'https://as1.ftcdn.net/v2/jpg/01/13/13/84/1000_F_113138497_gjD74fl7kKnFVCl3WEpoUp1hlUvEwIFS.jpg',
     alt:"Explorers Company",
   },
   {
     image:
-      'https://www.incredibleindia.org/content/dam/incredibleindia/images/places/kochi/kochi-chinese-fishing-nets-1.jpg/jcr:content/renditions/cq5dam.web.256.256.jpeg',
+      'https://images.unsplash.com/photo-1605955794720-651b9ae7f5e7?q=80&w=1930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     alt:"Explorers Company",
   },
   {
     image:
-      'https://www.incredibleindia.org/content/dam/incredibleindia/images/places/bekal/bekal-mallikarjuna-temple-170.jpg/jcr:content/renditions/cq5dam.web.256.256.jpeg',
+      'https://www.holidify.com/images/bgImages/BEKAL.jpg',
     alt:"Explorers Company",
   },
   {
     image:
-      'https://res.cloudinary.com/djlhr4ycg/image/upload/v1718280135/OIP_1_h2mebm.jpg',
+      'https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1317845540_20191031110021_20191031110103.png',
     alt:"Explorers Company",
   },
   {
     image:
-      'https://www.incredibleindia.org/content/dam/incredibleindia/images/places/munnar/munnar-pampadum-shola-national-park-20.jpg/jcr:content/renditions/cq5dam.web.256.256.jpeg',
+      'https://plus.unsplash.com/premium_photo-1697730314165-2cd71dc3a6a4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     alt:"Explorers Company",
   },
   {
     image:
-      'https://res.cloudinary.com/djlhr4ycg/image/upload/v1718280135/shillong_kdgusq.jpg',
+      'https://images.unsplash.com/photo-1603010288144-7735dd294baf?q=80&w=2066&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     alt:"Explorers Company",
   },
   {
     image:
-      'https://www.incredibleindia.org/content/dam/incredibleindia/images/places/wayanad/wayanad-wayanad-wildlife-sanctuary-11.jpg/jcr:content/renditions/cq5dam.web.256.256.jpeg',
+      'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     alt:"Explorers Company",
   },
 ];

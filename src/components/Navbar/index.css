@@ -73,9 +73,11 @@
   padding: 0.5rem 1rem;
   cursor: pointer;
   border-radius: 1rem;
+  width: 150px;
+  text-align: center;
   border: none;
   color: white;
-  background-color: #48cae4;
+  background-color: #6739B7;
   font-size: 1rem;
   text-transform: uppercase;
   transition: 0.3s;

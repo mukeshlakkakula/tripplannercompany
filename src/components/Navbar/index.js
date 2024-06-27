@@ -56,7 +56,7 @@ export default function Navbar() {
             <a href="#testimonials">Testimonials</a>
           </li>
         </ul>
-        <a href="#contactus" className="connect-btn">Connect</a>
+        <a href="https://razorpay.me/@explorerscompany" target="_blank" rel="noopener noreferrer" className="connect-btn">Pay Now</a>
       </nav>
       <div className={`responsive-nav ${navbarState ? "open" : ""}`}>
         <div className="close-btn" onClick={closeNavbar}>
@@ -85,7 +85,7 @@ export default function Navbar() {
           </li>
           <li>
           <a href="#contactus" className="connect-btn" onClick={closeNavbar}>
-            Connect
+            Pay Now
           </a>
           </li>
         </ul>

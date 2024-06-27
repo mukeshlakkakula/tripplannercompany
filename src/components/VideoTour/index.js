@@ -3,9 +3,9 @@ import ReactPlayer from "react-player";
 import "./index.css"; // Import the CSS file
 
 const videos = [
-  "https://youtu.be/fd41kvB-SLw?si=jVTkyR-O7_uSsVWD",
-  "https://youtu.be/9X-BynAGG6k?si=t0vTn_6BvzLVoEwE",
-  "https://youtu.be/qGGqSs7CVec?si=t_Or7Acj1l8JRdSm"
+  "https://youtu.be/qT_am9p4UpU?si=NC6Cl2npBMqBMBtS",
+  "https://youtu.be/Z6LZ9J6E4Xg?si=C_hloUEPFdEvE3dD",
+  "https://youtu.be/3ov31OmKzjk?si=gfsLqwLWIRCAoTG6"
 ];
 
 const VideoTour = () => {

@@ -97,7 +97,7 @@ const Footer = () => {
             <h2 className="mainheading-text">Resources</h2>
             <a href="/press">Press Info</a>
             <a href="/customers">Customers</a>
-            <a href="/reviews">Reviews</a>
+            <a href="https://g.page/r/CbtnbhBnx1cREAI/review">Reviews</a>
           </div>
         </div>
         <hr />

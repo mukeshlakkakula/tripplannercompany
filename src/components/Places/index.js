@@ -3,7 +3,7 @@ import './index.css';
 import PlaceCard from "./PlaceCard";
 import OrderPopup from "../OrderPopup"; // Adjust the path accordingly
 import Img1 from "../../assets/places/boat.jpg";
-import Img2 from "../../assets/places/tajmahal.jpg";
+import Img2 from "../../assets/places/img_a2a20f11fefe9b7fd387175891b06a61_1529788961366_processed_original.jpg";
 import Img3 from "../../assets/places/water.jpg";
 import Img4 from "../../assets/places/place4.jpg";
 import Img5 from "../../assets/places/place5.jpg";
@@ -35,7 +35,7 @@ const Places = () => {
           <PlaceCard
             handleOrderPopup={handleOrderPopup}
             img={Img1}
-            title="Backwaters of Kerala"
+            title="Explore Kerala"
             alt="Explorers Company"
             location="Kerala, India"
             description="Explore the serene backwaters and lush greenery of Kerala on a traditional boat ride."
@@ -45,10 +45,10 @@ const Places = () => {
           <PlaceCard
             handleOrderPopup={handleOrderPopup}
             img={Img2}
-            title="Taj Mahal"
+            title="Harihar Fort"
             alt="Explorers Company"
-            location="Agra, India"
-            description="Visit the iconic Taj Mahal, an ivory-white marble mausoleum on the south bank of the Yamuna river."
+            location="Maharashtra, India "
+            description="Remains of a venerable fortress atop a hill, reachable via a steep trek & stone-cut stairs."
             price="2-4"
             type="Cultural Heritage"
           />
