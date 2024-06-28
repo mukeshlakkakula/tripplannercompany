@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
-import './index.css'
+import './index.css';
 
 // Keyframes for background animation
 const backgroundAnimation = keyframes`
@@ -31,6 +31,10 @@ const Container = styled.div`
   background: linear-gradient(270deg, #e3ffe7, #d9e7ff, #e3ffe7);
   background-size: 600% 600%;
   animation: ${backgroundAnimation} 15s ease infinite;
+
+  @media screen and (max-width: 1024px) {
+    padding: 10px;
+  }
 `;
 
 const FormWrapper = styled.div`
@@ -40,15 +44,21 @@ const FormWrapper = styled.div`
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   padding: 2rem;
-  margin: auto;
+  margin: 10px;
   animation: ${slideUp} 0.6s ease-in-out;
+
+  @media screen and (max-width: 1024px) {
+    padding: 1.5rem;
+  }
 
   @media screen and (max-width: 768px) {
     padding: 1.5rem;
+    margin: 10px;
   }
 
   @media screen and (max-width: 480px) {
     padding: 1rem;
+    margin: 5px;
   }
 `;
 
@@ -62,6 +72,10 @@ const Title = styled.h1`
   font-weight: 400;
   text-align: center;
   color: black;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 2.5rem;
+  }
 
   @media screen and (max-width: 768px) {
     font-size: 2rem;
@@ -186,116 +200,108 @@ const ContactUs = () => {
   const getUserData = (event) => {
     const { name, value } = event.target;
     setUser({ ...user, [name]: value });
-  }
+  };
 
   const handleLogin = async (event) => {
     event.preventDefault();
     const { name, email, phone, address, message } = user;
 
     if (name && email && phone && address && message) {
-      const res = await fetch("https://react-form-16c91-default-rtdb.firebaseio.com/reactcontactform.json", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, phone, address, message })
-      });
+      // Create the WhatsApp message
+      const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AAddress: ${address}%0AMessage: ${message}`;
 
-      if (res) {
-        setUser({
-          name: "",
-          email: "",
-          phone: "",
-          address: "",
-          message: ""
-        });
-        alert("Data Stored Successfully");
-      }
+      // Construct the WhatsApp URL
+      const whatsappUrl = `https://wa.me/919032302468?text=${whatsappMessage}`;
+
+      // Open the WhatsApp URL
+      window.open(whatsappUrl, '_blank');
     }
-  }
+  };
 
   return (
-  <section id="contactus">
-    <Container>
-      <FormWrapper>
-        <Form onSubmit={handleLogin}>
-          <Title>Contact Us</Title>
-          <FormContainer>
-            <FormContent>
-              <Label htmlFor="name">Name</Label>
-              <InputField
-                type="text"
-                value={user.name}
-                onChange={getUserData}
-                placeholder="Enter your Name"
-                required
-                autoComplete="off"
-                name="name"
-                id="name"
-              />
-              <Underline />
-            </FormContent>
-            <FormContent>
-              <Label htmlFor="email">Email</Label>
-              <InputField
-                type="email"
-                value={user.email}
-                onChange={getUserData}
-                placeholder="Enter your Email Address"
-                required
-                autoComplete="off"
-                name="email"
-                id="email"
-              />
-              <Underline />
-            </FormContent>
-            <FormContent>
-              <Label htmlFor="phone">Mobile Number</Label>
-              <InputField
-                type="number"
-                value={user.phone}
-                onChange={getUserData}
-                placeholder="Enter your Mobile Number"
-                required
-                autoComplete="off"
-                name="phone"
-                id="phone"
-              />
-              <Underline />
-            </FormContent>
-            <FormContent>
-              <Label htmlFor="address">Address</Label>
-              <InputField
-                type="text"
-                value={user.address}
-                onChange={getUserData}
-                placeholder="Enter your Address"
-                required
-                autoComplete="off"
-                name="address"
-                id="address"
-              />
-              <Underline />
-            </FormContent>
-            <FormContent>
-              <Label htmlFor="message">Message</Label>
-              <Textarea
-                name="message"
-                rows="5"
-                value={user.message}
-                onChange={getUserData}
-                placeholder="Enter your Message"
-                required
-                autoComplete="off"
-                id="message"
-              />
-              <Underline />
-            </FormContent>
-          </FormContainer>
-          <Button type="submit">Submit</Button>
-        </Form>
-      </FormWrapper>
-    </Container>
+    <section id="contactus">
+      <Container>
+        <FormWrapper>
+          <Form onSubmit={handleLogin}>
+            <Title>Contact Us</Title>
+            <FormContainer>
+              <FormContent>
+                <Label htmlFor="name">Name</Label>
+                <InputField
+                  type="text"
+                  value={user.name}
+                  onChange={getUserData}
+                  placeholder="Enter your Name"
+                  required
+                  autoComplete="off"
+                  name="name"
+                  id="name"
+                />
+                <Underline />
+              </FormContent>
+              <FormContent>
+                <Label htmlFor="email">Email</Label>
+                <InputField
+                  type="email"
+                  value={user.email}
+                  onChange={getUserData}
+                  placeholder="Enter your Email Address"
+                  required
+                  autoComplete="off"
+                  name="email"
+                  id="email"
+                />
+                <Underline />
+              </FormContent>
+              <FormContent>
+                <Label htmlFor="phone">Mobile Number</Label>
+                <InputField
+                  type="number"
+                  value={user.phone}
+                  onChange={getUserData}
+                  placeholder="Enter your Mobile Number"
+                  required
+                  autoComplete="off"
+                  name="phone"
+                  id="phone"
+                />
+                <Underline />
+              </FormContent>
+              <FormContent>
+                <Label htmlFor="address">Address</Label>
+                <InputField
+                  type="text"
+                  value={user.address}
+                  onChange={getUserData}
+                  placeholder="Enter your Address"
+                  required
+                  autoComplete="off"
+                  name="address"
+                  id="address"
+                />
+                <Underline />
+              </FormContent>
+              <FormContent>
+                <Label htmlFor="message">Message</Label>
+                <Textarea
+                  name="message"
+                  rows="5"
+                  value={user.message}
+                  onChange={getUserData}
+                  placeholder="Enter your Message"
+                  required
+                  autoComplete="off"
+                  id="message"
+                />
+                <Underline />
+              </FormContent>
+            </FormContainer>
+            <Button type="submit">Submit</Button>
+          </Form>
+        </FormWrapper>
+      </Container>
     </section>
   );
-}
+};
 
 export default ContactUs;
