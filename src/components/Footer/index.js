@@ -98,11 +98,16 @@ const Footer = () => {
             <a href="https://www.timebulletin.com/journey-beyond-boundaries-redefining-travel-experiences-by-achyuthanand-reddy-ceo-explorers-company/">Press Info</a>
             <a href="https://www.instagram.com/explorers_company/">Customers</a>
             <a href="https://g.page/r/CbtnbhBnx1cREAI/review">Reviews</a>
+            <a href="https://explorerscompany.in/privacy.html"> Privacy </a>
           </div>
         </div>
         <hr />
         <div className="bottom-section">
-          <p>@2024 Explorers Company | All Rights Reserved</p>
+          <p> <a className="blue-link" href="https://www.instagram.com/explorers_company">@2024</a> Explorers Company | All Rights Reserved |
+             <a href="https://explorerscompany.in/terms.html" className="blue-link"> Terms & Conditions</a>          |
+             <a href="https://explorerscompany.in/payment.html"> Payment </a> |
+             <a href="https://explorerscompany.in/privacy.html"> Privacy </a>
+             </p>
           <div className="payment-methods" style={{ gap: "10px" }}>
             <p>We Accept Payment:</p>
             <SiRazorpay />
